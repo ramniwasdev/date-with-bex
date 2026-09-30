@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7d9df">
+  <meta name="description" content="A little date invitation for Bex, from Bubs.">
+  <title>Bex, a tiny question...</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=DM+Serif+Display:ital@0;1&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="paper-noise" aria-hidden="true"></div>
+  <div class="butterfly-field" aria-hidden="true">
+    <span class="butterfly butterfly-one">&#10047;</span>
+    <span class="butterfly butterfly-two">&#10047;</span>
+    <span class="butterfly butterfly-three">&#10047;</span>
+  </div>
+
+  <main>
+    <section class="scene invitation-scene is-active" id="invitation" aria-labelledby="invitation-title">
+      <div class="flower-photo flower-photo-left" aria-hidden="true"></div>
+      <div class="flower-photo flower-photo-right" aria-hidden="true"></div>
+
+      <div class="invitation-copy">
+        <p class="eyebrow">A very important tiny question</p>
+        <h1 id="invitation-title" tabindex="-1">Bex, Fancy going on a date with me this Saturday?</h1>
+        <p class="intro">I have four plans, several butterflies, and exactly zero chill about asking you.</p>
+
+        <div class="answer-area" aria-label="Your answer">
+          <button class="button button-yes" id="yes-button" type="button">
+            Yes, obviously
+            <span aria-hidden="true">&#9829;</span>
+          </button>
+          <button class="button button-no" id="no-button" type="button">Hmm, no</button>
+        </div>
+        <p class="persuasion" id="persuasion" aria-live="polite"></p>
+        <button class="not-now" id="not-now-button" type="button" hidden>Not right now, but thank you for asking</button>
+      </div>
+
+      <p class="signature">an optimistic little note from <strong>Bubs</strong></p>
+    </section>
+
+    <section class="scene celebration-scene" id="celebration" aria-labelledby="celebration-title" hidden>
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+      <div class="dancing-guy" aria-hidden="true"><span>&#128378;</span></div>
+      <div class="celebration-doodles" aria-hidden="true">
+        <span>&#9829;</span>
+        <span>&#10022;</span>
+        <span>&#9829;</span>
+        <span>&#10022;</span>
+      </div>
+      <div class="celebration-copy">
+        <p class="scribble">she said yes!!!</p>
+        <h2 id="celebration-title" tabindex="-1">Woakieeee, let&rsquo;s look at the cards</h2>
+        <p>The tiny planning committee is dancing. Pick our favourite kind of chaos.</p>
+        <button class="button button-primary" id="see-plans-button" type="button">Bring on the cute plans</button>
+      </div>
+    </section>
+
+    <section class="scene plans-scene" id="plans" aria-labelledby="plans-title" hidden>
+      <header class="plans-header">
+        <p class="eyebrow">Choose our adventure</p>
+        <h2 id="plans-title" tabindex="-1">What sounds most like us?</h2>
+        <p>No wrong answers. Excellent snacks strongly implied.</p>
+      </header>
+
+      <div class="plans-grid">
+        <article class="plan-card plan-card-park">
+          <div class="plan-photo">
+            <img src="assets/cubbon-park-feature.jpg" alt="A lush green tree-lined path inside Cubbon Park">
+            <span class="tape" aria-hidden="true"></span>
+            <span class="plan-number" aria-hidden="true">01</span>
+          </div>
+          <div class="plan-copy">
+            <h3>Cubbon Park Picnic</h3>
+            <p>A blanket under the trees, sketchbooks and stories, light games, good snacks, and enthusiastic dog-spotting.</p>
+            <div class="plan-verdicts">
+              <div class="plan-verdict plan-pros">
+                <h4><span aria-hidden="true">&#9829;</span> Cute wins</h4>
+                <ul>
+                  <li>Dog friends and tree shade</li>
+                  <li>Picnic, doodles, books and games</li>
+                </ul>
+              </div>
+              <div class="plan-verdict plan-cons">
+                <h4><span aria-hidden="true">&#9788;</span> Tiny catch</h4>
+                <ul><li>We may forget each other while petting every dog</li></ul>
+              </div>
+            </div>
+            <div class="plan-actions">
+              <button class="choose-plan" type="button" data-plan="Cubbon Park Picnic">Pick this one</button>
+              <a href="https://www.google.com/maps/search/?api=1&query=Cubbon+Park+Bengaluru" target="_blank" rel="noopener noreferrer">View map <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="plan-card plan-card-museum">
+          <div class="plan-photo">
+            <img src="assets/music-museum.jpg" alt="A colorful display celebrating music and instruments">
+            <span class="tape tape-pink" aria-hidden="true"></span>
+            <span class="plan-number" aria-hidden="true">02</span>
+          </div>
+          <div class="plan-copy">
+            <h3>Indian Music Experience Museum</h3>
+            <p>An interactive wander through India&rsquo;s sounds: instruments, stories, rhythm experiments, and plenty to listen to together.</p>
+            <div class="plan-verdicts">
+              <div class="plan-verdict plan-pros">
+                <h4><span aria-hidden="true">&#9829;</span> Cute wins</h4>
+                <ul>
+                  <li>Air-conditioned musical adventure</li>
+                  <li>Walk and Talk and Plenty to giggle about</li>
+                </ul>
+              </div>
+              <div class="plan-verdict plan-cons">
+                <h4><span aria-hidden="true">&#9788;</span> Tiny catch</h4>
+                <ul><li>Hindi Songs and I &ldquo;vibe hard&rdquo;</li></ul>
+              </div>
+            </div>
+            <div class="plan-actions">
+              <button class="choose-plan" type="button" data-plan="Indian Music Experience Museum, JP Nagar">Pick this one</button>
+              <a href="https://www.google.com/maps/search/?api=1&query=Indian+Music+Experience+Museum+JP+Nagar+Bengaluru" target="_blank" rel="noopener noreferrer">View map <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="plan-card plan-card-native">
+          <div class="plan-photo">
+            <img src="assets/go-native.jpg" alt="A warm plant-filled restaurant table">
+            <span class="tape tape-green" aria-hidden="true"></span>
+            <span class="plan-number" aria-hidden="true">03</span>
+          </div>
+          <div class="plan-copy">
+            <h3>Go Native, HSR</h3>
+            <p>Seasonal Indian food in a leafy, easygoing space: slow conversation, shared plates, and something sweet to finish.</p>
+            <div class="plan-verdicts">
+              <div class="plan-verdict plan-pros">
+                <h4><span aria-hidden="true">&#9829;</span> Cute wins</h4>
+                <ul>
+                  <li>Farm to Plate food, super Healthy and Tasty</li>
+                  <li>You can experiment here, everything is great.</li>
+                </ul>
+              </div>
+              <div class="plan-verdict plan-cons">
+                <h4><span aria-hidden="true">&#9788;</span> Tiny catch</h4>
+                <ul><li>Sharing the last bite may test us immediately </li></ul>
+              </div>
+            </div>
+            <div class="plan-actions">
+              <button class="choose-plan" type="button" data-plan="Go Native, HSR">Pick this one</button>
+              <a href="https://www.google.com/maps/search/?api=1&query=Go+Native+HSR+Layout+Bengaluru" target="_blank" rel="noopener noreferrer">View map <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="plan-card plan-card-home">
+          <div class="plan-photo">
+            <img src="assets/home-date-new.jpg" alt="A tall man and a shorter woman cooking closely together at home">
+            <span class="tape tape-blue" aria-hidden="true"></span>
+            <span class="plan-number" aria-hidden="true">04</span>
+          </div>
+          <div class="plan-copy">
+            <h3>Home, Sweet Home</h3>
+            <p>We cook something delicious, build the perfect playlist, make a glorious kitchen mess, and settle in for cuddles.</p>
+            <div class="plan-verdicts">
+              <div class="plan-verdict plan-pros">
+                <h4><span aria-hidden="true">&#9829;</span> Cute wins</h4>
+                <ul>
+                  <li>Our playlist, our kitchen, maximum cuddles</li>
+                  <li>The height difference gets sous-chef duties</li>
+                </ul>
+              </div>
+              <div class="plan-verdict plan-cons">
+                <h4><span aria-hidden="true">&#9788;</span> Tiny catch</h4>
+                <ul><li>Future us has to face the dishes</li></ul>
+              </div>
+            </div>
+            <div class="plan-actions">
+              <button class="choose-plan" type="button" data-plan="A cozy date at home">Pick this one</button>
+              <span class="home-note">dress code: maximum cozy</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="scene result-scene" id="result" aria-labelledby="result-title" hidden>
+      <div class="result-note">
+        <p class="scribble">it&rsquo;s a date!</p>
+        <h2 id="result-title" tabindex="-1">Excellent choice, Bex.</h2>
+        <p id="chosen-plan"></p>
+        <p class="result-status" id="submission-status" aria-live="polite"></p>
+        <button class="button button-primary share-choice" id="share-choice-button" type="button" hidden>Send my pick to Bubs</button>
+        <p class="result-signoff">Can&rsquo;t wait.<br><strong>Bubs x</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <noscript>This invitation needs JavaScript enabled to reveal the date plans.</noscript>
+  <script src="script.js"></script>
+</body>
+</html>
